@@ -3,3 +3,7 @@ body{
     background-color: cadetblue;
     text-align: center;
 }
+p{
+    text-shadow: cornsilk;
+    font-size: large;
+}
