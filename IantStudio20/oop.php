@@ -1,0 +1,39 @@
+<?php
+//classes - is a blueprint for data type.
+class User
+{
+	//properties of user
+	public $email;
+	public $name;
+
+	//1.create constructor to initializa values to properties
+	public function __construct($name, $email)
+	{
+		// $this->email = 'pari@gmail.com';
+		// $this->name = 'Hrutika';
+		$this->email = $email;
+		$this->name = $name;
+	}
+
+	public function login()
+	{
+		//echo ' The User Logged In !!';
+		echo $this->name.' Logged In!!';
+	}
+}//end of class
+
+//instantiate object of user class
+// $userOne = new User();
+
+// $userOne->login();
+// echo $userOne->name;
+// echo $userOne->email;
+echo "<br/>";
+$userTwo = new User('Sunanda','sungitmca@gmail.com');
+$userTwo->name = 'mario'; //overridden value for name
+echo $userTwo->name."<br/>";
+// echo $userTwo->email;
+
+$userTwo->login();
+
+?>
